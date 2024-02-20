@@ -101,6 +101,8 @@ Repetir el proceso de creación de la red virtual y el grupo de seguridad de red
 make create_new_azure_apim_vnet
 ```
 
+### **Nota:** En este punto hacemos una pausa y desplegamos el backend el cual esta descrito en el archivo [backend.md](./backend.md). Esto servira para las pruebas funcionales del servicio descrito en el archivo swagger.yaml
+
 ### 9. Despliegue de la Nueva Instancia de Azure API Management
 
 Desplegar la nueva instancia de APIM con la configuración deseada y prepararla para la restauración del respaldo.

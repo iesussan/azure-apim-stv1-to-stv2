@@ -272,12 +272,12 @@ deploy_new_azure_api_management:
 		--location $(LOCATION)
 
 update_new_azure_apim_customparameters:
-	# az network public-ip create \
-	# --name $(APIM_NEW_PUBLIC_IP_NAME) \
-	# --resource-group $(RESOURCE_GROUP) \
-	# --location $(LOCATION) \
-	# --allocation-method Static \
-	# --dns-name $(APIM_NEW_PUBLIC_IP_DNS_NAME)
+	az network public-ip create \
+	--name $(APIM_NEW_PUBLIC_IP_NAME) \
+	--resource-group $(RESOURCE_GROUP) \
+	--location $(LOCATION) \
+	--allocation-method Static \
+	--dns-name $(APIM_NEW_PUBLIC_IP_DNS_NAME)
 
 	@APIM_NEW_PUBLIC_IP_ID=$$(az network public-ip show --name $(APIM_NEW_PUBLIC_IP_NAME) --resource-group $(RESOURCE_GROUP) --query id --out tsv); \
 	TMPFILE=$$(mktemp); \
