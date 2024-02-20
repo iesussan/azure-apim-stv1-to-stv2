@@ -1,0 +1,49 @@
+openapi: 3.0.1
+info:
+  title: Example Function API
+  description: API for an Azure Function that greets a user by name.
+  version: 1.0.0
+servers:
+  - url: 'https://containerapp-python-functions.azurewebsites.net/api/'
+    description: Base URL for the API
+paths:
+  /python-functions:
+    get:
+      summary: Greet User by Name
+      operationId: greetByName
+      parameters:
+        - name: name
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Name of the user to greet
+      responses:
+        '200':
+          description: A greeting to the user by name if provided, otherwise a generic greeting.
+          content:
+            text/plain:
+              schema:
+                type: string
+    post:
+      summary: Greet User by Name from Request Body
+      operationId: greetByNameFromBody
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: Name of the user to greet
+      responses:
+        '200':
+          description: A greeting to the user by name if provided in the request body, otherwise a generic greeting.
+          content:
+            text/plain:
+              schema:
+                type: string
+components:
+  schemas: {}
