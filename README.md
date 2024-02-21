@@ -38,7 +38,4 @@ La carpeta `inplace-vnet-injection` contiene información y guías para realizar
 
 Contenidos:
 - **README.md**: Documento que detalla los pasos y consideraciones para actualizar inplace la inyección de VNet "in-place" lo que dispara el proceso de upgrade al sku stv2.
-
-Contenidos:
-- **README.md**: Ofrece una guía detallada sobre cómo realizar la migración "inplace, incluyendo requisitos previos, pasos a seguir, y consideraciones importantes.
 - **apim-customproperties.json**: Contiene configuraciones para la integración de VNet y la desactivación de cifrados de baja seguridad por defecto en Azure API Management.
