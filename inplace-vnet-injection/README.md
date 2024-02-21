@@ -1,4 +1,4 @@
-La documentación de Microsoft para la migración "in-place" de una instancia de Azure API Management (APIM) inyectada en una red a la plataforma stv2 implica actualizar la configuración de red existente para utilizar nuevas configuraciones de red. Este proceso de actualización activa efectivamente la migración, lo cual es confirmado por la documentación. A continuación, se presenta una documentación estructurada basada en la información proporcionada, enfocada en el proceso de actualización y migración.
+
 
 # Documentación para la Migración "In-Place" a Azure API Management stv2
 
