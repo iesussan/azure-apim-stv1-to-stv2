@@ -8,10 +8,11 @@ Este repositorio contiene los recursos y guías necesarios para facilitar la mig
 
 El repositorio está organizado en dos carpetas principales, cada una dedicada a un enfoque específico de migración o configuración:
 
-```
-.
-├── inpace-vnet-injection
-│   └── README.md
+```shell
+├── README.md
+├── inplace-vnet-injection
+│   ├── README.md
+│   └── apim-customproperties.json
 └── side-by-side
     ├── Makefile
     ├── README.md
@@ -36,4 +37,8 @@ Contenidos:
 La carpeta `inplace-vnet-injection` contiene información y guías para realizar la inyección de VNet "in-place" en una instancia existente de Azure API Management. Este enfoque es útil para generar la migración de una instancia de APIM con el cambio de una red virtual sin necesidad de migrar a una nueva instancia.
 
 Contenidos:
-- **README.md**: Documento que detalla los pasos y consideraciones para actualizar inplace la inyección de VNet "in-place" en una instancia de APIM, incluyendo la configuración de una nueva red virtual lo que dispara el proceso de upgrade al sku stv2.
+- **README.md**: Documento que detalla los pasos y consideraciones para actualizar inplace la inyección de VNet "in-place" lo que dispara el proceso de upgrade al sku stv2.
+
+Contenidos:
+- **README.md**: Ofrece una guía detallada sobre cómo realizar la migración "inplace, incluyendo requisitos previos, pasos a seguir, y consideraciones importantes.
+- **apim-customproperties.json**: Contiene configuraciones para la integración de VNet y la desactivación de cifrados de baja seguridad por defecto en Azure API Management.
