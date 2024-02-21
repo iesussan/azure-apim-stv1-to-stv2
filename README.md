@@ -33,7 +33,7 @@ Contenidos:
 
 ### Carpeta `inplace-vnet-injection`
 
-La carpeta `inplace-vnet-injection` contiene información y guías para realizar la inyección de VNet "in-place" en una instancia existente de Azure API Management. Este enfoque es útil para integrar una instancia de APIM con una red virtual sin necesidad de migrar a una nueva instancia.
+La carpeta `inplace-vnet-injection` contiene información y guías para realizar la inyección de VNet "in-place" en una instancia existente de Azure API Management. Este enfoque es útil para generar la migración de una instancia de APIM con el cambio de una red virtual sin necesidad de migrar a una nueva instancia.
 
 Contenidos:
-- **README.md**: Documento que detalla los pasos y consideraciones para implementar la inyección de VNet "in-place" en una instancia de APIM, incluyendo la configuración de redes virtuales, ajustes de seguridad, y más.
+- **README.md**: Documento que detalla los pasos y consideraciones para actualizar inplace la inyección de VNet "in-place" en una instancia de APIM, incluyendo la configuración de una nueva red virtual lo que dispara el proceso de upgrade al sku stv2.
